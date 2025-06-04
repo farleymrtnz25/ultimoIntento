@@ -1,0 +1,16 @@
+{
+  "name": "tu-proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "mkdir -p dist && cp ./index.html ./dist/index.html"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^13.4.0",
+    "serverless-http": "^3.2.0"
+  }
+}
