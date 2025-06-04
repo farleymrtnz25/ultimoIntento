@@ -23,7 +23,7 @@ function guardar() {
     redirect: "follow"
   };
 
-  fetch("https://desarrolloseguro.netlify.app/.netlify/functions/usuarios", requestOptions)
+  fetch("https://licorer.netlify.app/.netlify/functiones/usuarios", requestOptions)
     .then((response) => response.json())
     .then((result) => {
       if (result.message === "Usuario agregado exitosamente") {
@@ -47,7 +47,7 @@ function listar() {
     redirect: "follow"
   };
 
-  fetch(`https://desarrolloseguro.netlify.app/.netlify/functions/usuarios?iden=${ndoc}`, requestOptions)
+  fetch(`https://licorer.netlify.app/.netlify/functiones/usuarios?iden=${ndoc}`, requestOptions)
     .then((response) => response.json())
     .then((result) => {
       document.getElementById("rta").innerHTML = JSON.stringify(result);
